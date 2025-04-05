@@ -14,9 +14,13 @@ slider.addEventListener("input", debounce(() => {
 }, 100));
 
 
+// 2 
 
-const box = document.getElementById('box');
+const box = document.querySelector('.box');
 
 document.addEventListener('mousemove', _.debounce((event) => {
-  box.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+  box.style.transform = `translate(${event.clientX - 25}px, ${event.clientY - 25}px)`;
 }, 100));
+
+
+
